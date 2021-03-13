@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    height: 100px;
+    width: 200px;
+    background-color: darkgreen;
+    margin: 10px 10px 10px 10px;
+}
+
+/*.first{
+	background-color: green;*/ /* Использование селектора по классу*/
+}
+#d1{
+	background-color: LightCoral; /*Использование селектора по id, смена цвета*/
+}
+
+#d2{
+	background-color: Gold; 
+}
+
+#d3{
+	background-color: OrangeRed; 
+}
+
+#d4{
+	background-color: Magenta; 
+}
+
+#d5{
+	background-color: BurlyWood; 
+}
+
+#d6{
+	background-color: DarkCyan; 
+}
+
+p:first-letter{  
+	font-size: 30px;/* псевдоэлемент, создающий начальный символ абзаца,выделяющийся из остального текста*/
+	color: Red;
+}
+
+p:first-line{
+	font-weight: bold;/* псевдоэлемент, использующй всю первую строку текста*/
+	color: DarkGreen;
+}
+
+.one:before{
+	content: "первый квадрат "/* псевдоэлемент, добавляющий текст в начало элемента */
+}
+.two:after{
+	content: " Конец описания"/* псевдоэлемент, добавляющий текст в конец элемента */
+}
+
+::selection{
+	color: LightCyan;
+	background-color: Green;/* псевдоэлемент, отвечающий за выделение */
+}
+p:first-child {
+  color: BurlyWood;
+  background-color: PowderBlue;/*псевдокласс, находит любой элемент, являющийся первым у родителя */
+  padding: 5px;
+}
+a:hover{
+	background: PeachPuff ;/*псевдокласс,находит любой элемент, являющийся первым у родителя */
+	color: DarkMagenta;
+}
+a[href="https://ru.wikipedia.org/wiki/%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B9_%D1%86%D0%B2%D0%B5%D1%82"]{
+	color: OliveDrab;/*Цвет ссылки */
+}
+a:visited{
+	color: Teal;/*псевдокласс,отмечает цветом посещенную ссылку */
+}
